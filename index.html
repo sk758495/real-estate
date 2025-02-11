@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/angel heaven w.o.b full.png" alt="angel heaven" width="150" height="74">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+           
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Form -->
+    <section class="hero-section" id="container-animation">
+      <img src="img/house-1.jpg" class="img-fluid" alt="image">
+      <div class="search-form">
+        <form class="d-flex flex-wrap align-items-center" action="#" method="POST">
+          <div class="form-group d-flex align-items-center mb-3">
+            <i class="bi bi-geo-alt"></i> <!-- Location Icon -->
+            <input class="form-control ms-2" type="text" placeholder="Enter location" name="location" aria-label="Location" required>
+          </div>
+          <div class="form-group d-flex align-items-center mb-3">
+            <input class="form-control" type="date" name="check-in" required placeholder="Check-in">
+          </div>
+          <div class="form-group d-flex align-items-center mb-3">
+            <input class="form-control" type="date" name="check-out" required placeholder="Check-out">
+          </div>
+          <div class="form-group d-flex align-items-center mb-3">
+            <select class="form-control" name="guests" required>
+              <option value="">Guests</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="form-group d-flex align-items-center mb-3">
+            <select class="form-control" name="radius" required>
+              <option value="">Radius</option>
+              <option value="5">5 km</option>
+              <option value="10">10 km</option>
+              <option value="20">20 km</option>
+              <option value="50">50 km</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Hero Section with Form -->
+    <section class="featured-rentals text-center py-5" id="container-animation">
+        <h6 class="text-primary">Explore Our</h6>
+        <h2 class="fw-bold">Featured Rentals</h2>
+        <p>Carefully chosen to deliver you quality experience.</p>
+        
+        <div class="container">
+          <div class="row">
+            <!-- Rental Card 1 -->
+            <div class="col-md-4">
+              <div class="card rental-card">
+                <img src="img/house-2.jpg" class="card-img-top" alt="Modern Villa">
+                <div class="card-body">
+                  <h5 class="card-title">Freshly Built Modern Villa</h5>
+                  <p><i class="bi bi-geo-alt"></i> New York, United States of America</p>
+                  <p class="text-warning">★★★★★</p>
+                  <p>Added: January 8, 2024</p>
+                  <div class="d-flex justify-content-between">
+                    <span><i class="bi bi-house"></i> 3 Bedrooms</span>
+                    <span><i class="bi bi-shower"></i> 3 Bathrooms</span>
+                    <span><i class="bi bi-people"></i> 6 Guests</span>
+                    <span><i class="bi bi-rulers"></i> 1300 sq ft</span>
+                  </div>
+                  <p class="mt-2 text-primary fw-bold">$190 Per Day</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Rental Card 2 -->
+            <div class="col-md-4">
+              <div class="card rental-card">
+                <img src="img/house-3.webp" class="card-img-top" alt="Cozy Apartment">
+                <div class="card-body">
+                  <h5 class="card-title">Contemporary Cozy Apartment</h5>
+                  <p><i class="bi bi-geo-alt"></i> Miami Springs, Florida, United States</p>
+                  <p class="text-warning">★★★★★</p>
+                  <p>Added: January 8, 2024</p>
+                  <div class="d-flex justify-content-between">
+                    <span><i class="bi bi-house"></i> 1 Bedroom</span>
+                    <span><i class="bi bi-shower"></i> 1 Bathroom</span>
+                    <span><i class="bi bi-people"></i> 2 Guests</span>
+                    <span><i class="bi bi-rulers"></i> 760 sq ft</span>
+                  </div>
+                  <p class="mt-2 text-primary fw-bold">$89 Per Day</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Rental Card 3 -->
+            <div class="col-md-4">
+              <div class="card rental-card">
+                <img src="img/house-4.webp" class="card-img-top" alt="Luxury Apartment">
+                <div class="card-body">
+                  <h5 class="card-title">Modern and Luxury Apartment</h5>
+                  <p><i class="bi bi-geo-alt"></i> Chicago, Illinois, United States</p>
+                  <p class="text-warning">★★★★★</p>
+                  <p>Added: January 8, 2024</p>
+                  <div class="d-flex justify-content-between">
+                    <span><i class="bi bi-house"></i> 2 Bedrooms</span>
+                    <span><i class="bi bi-shower"></i> 2 Bathrooms</span>
+                    <span><i class="bi bi-people"></i> 5 Guests</span>
+                    <span><i class="bi bi-rulers"></i> 2460 sq ft</span>
+                  </div>
+                  <p class="mt-2 text-primary fw-bold">$149 Per Day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pagination -->
+          <div class="pagination justify-content-end mt-4 gap-2">
+            <button class="btn btn-primary">1</button>
+            <button class="btn btn-outline-primary">2</button>
+          </div>
+        </div>
+      </section>
+  
+      <div class="container-x" id="container-animation">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 image-section">
+                <img src="img/house-6.jpg" alt="Living Room">
+            </div>
+            <div class="col-lg-6 col-md-12 text-section">
+                <h2>A New Way to Live</h2>
+                <p>The RealHomes is a condo in Asheville, NC. The land around it was left untouched, and the surrounding apartments are built from sustainable materials.</p>
+                <ul class="amenities">
+                    <li>High-End Furniture</li>
+                    <li>24 Floors</li>
+                    <li>Natural Lighting</li>
+                    <li>Solar Heating</li>
+                    <li>Pet Friendly</li>
+                    <li>Hydromassage Bathrooms</li>
+                    <li>Low Energy Tools</li>
+                    <li>Average size 1,258 Sq Ft</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="image-gallery" id="container-animation">
+        <div class="gallery-item">
+            <img src="img/house-3.webp" alt="Three Bedrooms">
+            <div class="overlay">
+                <h3>Four Bedrooms</h3>
+                <p>From $290,000</p>
+                <p>4 Beds | 4 Baths | 1880 sq ft</p>
+                <a href="#" class="button">View Floor Plan</a>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/house-3.webp" alt="Four Bedrooms">
+            <div class="overlay">
+                <h3>Four Bedrooms</h3>
+                <p>From $290,000</p>
+                <p>4 Beds | 4 Baths | 1880 sq ft</p>
+                <a href="#" class="button">View Floor Plan</a>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/house-3.webp" alt="Five Bedrooms">
+            <div class="overlay">
+                <h3>Four Bedrooms</h3>
+                <p>From $290,000</p>
+                <p>4 Beds | 4 Baths | 1880 sq ft</p>
+                <a href="#" class="button">View Floor Plan</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- Hero Section with Form -->
+        <section class="featured-rentals text-center py-5" id="container-animation">
+            <h6 class="text-primary">Latest Rentals</h6>
+            <p>Carefully chosen to deliver you quality experience.</p>
+            
+            <div class="container">
+              <div class="row">
+                <!-- Rental Card 1 -->
+                <div class="col-md-4">
+                  <div class="card rental-card">
+                    <img src="img/house-1.jpg" class="card-img-top" alt="Modern Villa">
+                    <div class="card-body">
+                      <h5 class="card-title">Freshly Built Modern Villa</h5>
+                      <p><i class="bi bi-geo-alt"></i> New York, United States of America</p>
+                      <p class="text-warning">★★★★★</p>
+                      <p>Added: January 8, 2024</p>
+                      <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-house"></i> 3 Bedrooms</span>
+                        <span><i class="bi bi-shower"></i> 3 Bathrooms</span>
+                        <span><i class="bi bi-people"></i> 6 Guests</span>
+                        <span><i class="bi bi-rulers"></i> 1300 sq ft</span>
+                      </div>
+                      <p class="mt-2 text-primary fw-bold">$190 Per Day</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Rental Card 2 -->
+                <div class="col-md-4">
+                  <div class="card rental-card">
+                    <img src="img/house-2.jpg" class="card-img-top" alt="Cozy Apartment">
+                    <div class="card-body">
+                      <h5 class="card-title">Contemporary Cozy Apartment</h5>
+                      <p><i class="bi bi-geo-alt"></i> Miami Springs, Florida, United States</p>
+                      <p class="text-warning">★★★★★</p>
+                      <p>Added: January 8, 2024</p>
+                      <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-house"></i> 1 Bedroom</span>
+                        <span><i class="bi bi-shower"></i> 1 Bathroom</span>
+                        <span><i class="bi bi-people"></i> 2 Guests</span>
+                        <span><i class="bi bi-rulers"></i> 760 sq ft</span>
+                      </div>
+                      <p class="mt-2 text-primary fw-bold">$89 Per Day</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Rental Card 3 -->
+                <div class="col-md-4">
+                  <div class="card rental-card">
+                    <img src="img/house-3.webp" class="card-img-top" alt="Luxury Apartment">
+                    <div class="card-body">
+                      <h5 class="card-title">Modern and Luxury Apartment</h5>
+                      <p><i class="bi bi-geo-alt"></i> Chicago, Illinois, United States</p>
+                      <p class="text-warning">★★★★★</p>
+                      <p>Added: January 8, 2024</p>
+                      <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-house"></i> 2 Bedrooms</span>
+                        <span><i class="bi bi-shower"></i> 2 Bathrooms</span>
+                        <span><i class="bi bi-people"></i> 5 Guests</span>
+                        <span><i class="bi bi-rulers"></i> 2460 sq ft</span>
+                      </div>
+                      <p class="mt-2 text-primary fw-bold">$149 Per Day</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Rental Card 1 -->
+                <div class="col-md-4">
+                    <div class="card rental-card">
+                      <img src="img/house-4.webp" class="card-img-top" alt="Modern Villa">
+                      <div class="card-body">
+                        <h5 class="card-title">Freshly Built Modern Villa</h5>
+                        <p><i class="bi bi-geo-alt"></i> New York, United States of America</p>
+                        <p class="text-warning">★★★★★</p>
+                        <p>Added: January 8, 2024</p>
+                        <div class="d-flex justify-content-between">
+                          <span><i class="bi bi-house"></i> 3 Bedrooms</span>
+                          <span><i class="bi bi-shower"></i> 3 Bathrooms</span>
+                          <span><i class="bi bi-people"></i> 6 Guests</span>
+                          <span><i class="bi bi-rulers"></i> 1300 sq ft</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">$190 Per Day</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Rental Card 2 -->
+                  <div class="col-md-4">
+                    <div class="card rental-card">
+                      <img src="img/house-6.jpg" class="card-img-top" alt="Cozy Apartment">
+                      <div class="card-body">
+                        <h5 class="card-title">Contemporary Cozy Apartment</h5>
+                        <p><i class="bi bi-geo-alt"></i> Miami Springs, Florida, United States</p>
+                        <p class="text-warning">★★★★★</p>
+                        <p>Added: January 8, 2024</p>
+                        <div class="d-flex justify-content-between">
+                          <span><i class="bi bi-house"></i> 1 Bedroom</span>
+                          <span><i class="bi bi-shower"></i> 1 Bathroom</span>
+                          <span><i class="bi bi-people"></i> 2 Guests</span>
+                          <span><i class="bi bi-rulers"></i> 760 sq ft</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">$89 Per Day</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Rental Card 3 -->
+                  <div class="col-md-4">
+                    <div class="card rental-card">
+                      <img src="img/house-4.webp" class="card-img-top" alt="Luxury Apartment">
+                      <div class="card-body">
+                        <h5 class="card-title">Modern and Luxury Apartment</h5>
+                        <p><i class="bi bi-geo-alt"></i> Chicago, Illinois, United States</p>
+                        <p class="text-warning">★★★★★</p>
+                        <p>Added: January 8, 2024</p>
+                        <div class="d-flex justify-content-between">
+                          <span><i class="bi bi-house"></i> 2 Bedrooms</span>
+                          <span><i class="bi bi-shower"></i> 2 Bathrooms</span>
+                          <span><i class="bi bi-people"></i> 5 Guests</span>
+                          <span><i class="bi bi-rulers"></i> 2460 sq ft</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">$149 Per Day</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+              <!-- Pagination -->
+              <div class="pagination justify-content-center mt-4 gap-2">
+                <button class="btn btn-primary">1</button>
+                <button class="btn btn-outline-primary">2</button>
+                <button class="btn btn-outline-primary">3</button>
+                <button class="btn btn-outline-primary">4</button>
+                <button class="btn btn-outline-primary">5</button>
+                <button class="btn btn-outline-primary">6</button>
+              </div>
+            </div>
+          </section>
+
+
+          <footer class="bg-dark text-light py-5">
+            <div class="container">
+              <div class="row">
+                <!-- Popular Searches -->
+                <div class="col-md-3">
+                  <h5 class="fw-bold">Popular Searches</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Apartment for Rent</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Apartment Low to Hide</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Offices for Buy</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Offices for Rent</a></li>
+                    
+                  </ul>
+                </div>
+          
+                <!-- Homepress Markets -->
+                <div class="col-md-3">
+                  <h5 class="fw-bold">Homepress Markets</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Los Angeles Offices</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Las Vegas Apartments</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Sacramento Townhome</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">San Francisco Offices</a></li>
+                    
+                  </ul>
+                </div>
+          
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                  <h5 class="fw-bold">Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Pricing Plans</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Our Services</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+                    
+                  </ul>
+                </div>
+          
+                <!-- Subscribe -->
+                <div class="col-md-3">
+                  <h5 class="fw-bold">Subscribe</h5>
+                  <form>
+                    <div class="mb-2">
+                      <input type="text" class="form-control bg-secondary text-light" placeholder="First Name, Last Name*" />
+                    </div>
+                    <div class="mb-2">
+                      <input type="email" class="form-control bg-secondary text-light" placeholder="Your Email Address*" />
+                    </div>
+                    <button class="btn btn-primary w-100">SUBSCRIBE</button>
+                  </form>
+                </div>
+              </div>
+          
+              <!-- Footer Bottom -->
+              <hr class="border-secondary">
+              <div class="d-flex justify-content-between flex-wrap">
+                <p class="mb-0">Copyright &copy; 2025 <span class="fw-bold">ANGEL HEAVEN.</span> All Rights Reserved</p>
+                <div>
+                  <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-light me-3"><i class="bi bi-youtube"></i></a>
+                  <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+      
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
