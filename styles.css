@@ -4,7 +4,7 @@
 }
 .hero-section {
   position: relative;
-  height: auto;
+  height: 100vh;
 }
 .hero-section img {
   width: 100%;
@@ -25,13 +25,50 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 600px;
+  max-width: 1000px;
 }
 .search-form input,
 .search-form select {
   margin-right: 10px;
 }
+
+  /* Slider Style */
+  .form-control-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px; /* Thin slider */
+    background: #ddd; /* Light gray background */
+    border-radius: 15px;
+    outline: none;
+    transition: background 0.3s;
+  }
+
+  /* Style for the thumb (slider pointer) */
+  .form-control-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #007bff; /* Blue color */
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .form-control-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #007bff; /* Blue color */
+    cursor: pointer;
+  }
+
+  /* Hover effect for the slider */
+  .form-control-range:hover {
+    background: #aaa; /* Darker gray when hovered */
+  }
+
 .nav-link {
   background-color: white;
   border-radius: 30px;

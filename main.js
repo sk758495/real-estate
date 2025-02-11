@@ -1,3 +1,13 @@
+// navbar radius
+// Get the slider and the display element
+const radiusSlider = document.getElementById('radius-slider');
+const radiusValue = document.getElementById('radius-value');
+
+// Update the displayed value when the slider is moved
+radiusSlider.addEventListener('input', function() {
+  radiusValue.textContent = radiusSlider.value + 'km';
+});
+
 // Select all the elements inside the About section that we want to animate
 const aboutContent = document.querySelectorAll('#container-animation .row > div');
 
