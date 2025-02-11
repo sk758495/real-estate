@@ -5,6 +5,7 @@
 .hero-section {
   position: relative;
   height: 100vh;
+  animation: bounce 2s infinite; /* Apply bounce animation */
 }
 .hero-section img {
   width: 100%;
