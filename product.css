@@ -189,3 +189,36 @@ hr {
     animation: fadeUp 1s ease-in-out;
   }
   
+  .contact-section {
+    padding: 60px 0;
+}
+.contact-box {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+}
+.contact-box h5 {
+    font-weight: bold;
+}
+.contact-box p {
+    margin-bottom: 0;
+}
+.contact-form {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contact-form button {
+    background: #4169e1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
