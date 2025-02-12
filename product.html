@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   </head>
   <body>
 
@@ -65,7 +68,7 @@
       </div>
     </nav>
     
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up">
         <div class="property-header">
             <h2>Relaxing Apartment</h2>
             <div class="price">$2,800/mo</div>
@@ -114,7 +117,7 @@
         </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up">
         <hr>
         <h2 class="text-center">Description</h2>
         <p class="text-center">
@@ -146,13 +149,13 @@
         </div>
     </div>
     
-    <div class="update-info">
+    <div class="update-info" data-aos="fade-up">
         <hr>
         <p><i class="fa-regular fa-clock"></i> Updated on April 4, 2020 at 5:19 pm</p>
         <hr>
     </div>
 
-    <div class="container mt-5 my-4">
+    <div class="container mt-5 my-4" data-aos="fade-up">
         <!-- Features Section -->
         <h4 class="section-title">Features</h4>
         <hr>
@@ -197,7 +200,7 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-light py-5">
+    <footer class="bg-dark text-light py-5" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <!-- Popular Searches -->
@@ -266,6 +269,15 @@
       </div>
     </footer>
       
+          <!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration (ms)
+    easing: "ease-in-out",
+    once: true, // Run animation once
+  });
+</script>
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
