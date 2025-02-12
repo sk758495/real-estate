@@ -2,6 +2,31 @@
 .navbar {
   z-index: 1000; /* Ensure the navbar stays on top */
 }
+      /* Custom Search Box Styling */
+      .search-container {
+        position: relative;
+       
+      }
+
+      .search-container input {
+        width: 100%;
+        padding-right: 30px; /* Space for the icon */
+      }
+
+      .search-container i {
+        position: absolute;
+        right: 10px; /* Adjust as needed */
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+      }
+
+      /* Responsive Design for the Search Box */
+      @media (max-width: 768px) {
+        .search-container input {
+         
+        }
+      }
 .hero-section {
   position: relative;
   height: 100vh;
