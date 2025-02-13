@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   </head>
   <body>
 
@@ -66,51 +69,193 @@
       </div>
     </nav>
 
-    <!-- Hero Section with Form -->
-    <section class="hero-section" id="container-animation">
-      <img src="img/house-1.jpg" class="img-fluid" alt="image">
-      <div class="search-form">
-        <form class="d-flex flex-column align-items-center" action="#" method="POST">
-          <!-- Location, Date, and Guests in Flex Row -->
-          <div class="form-row d-flex justify-content-between w-100 mb-3">
-            <div class="form-group d-flex align-items-center">
-              <i class="bi bi-geo-alt"></i> <!-- Location Icon -->
-              <input class="form-control ms-2" type="text" placeholder="Your current location" name="location" aria-label="Location" required>
-            </div>
-            <div class="form-group d-flex align-items-center">
-              <i class="bi bi-calendar-check" style="margin-right: 3px;"></i> <!-- Calendar Check-in Icon -->
-              <input class="form-control" type="date" name="check-in" required placeholder="Check-in">
-            </div>
-            <div class="form-group d-flex align-items-center">
-              <i class="bi bi-calendar-x" style="margin-right: 3px;"></i> <!-- Calendar Check-out Icon -->
-              <input class="form-control" type="date" name="check-out" required placeholder="Check-out">
-            </div>
-            <div class="form-group d-flex align-items-center">
-              <i class="bi bi-people" style="margin-right: 3px;"></i> <!-- Group of people icon -->
-              <select class="form-control" name="guests" required>
-                <option value="">Guests</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-          </div>
+       <!-- Blog Section -->
+    <!-- Blog Section -->
+    <section class="featured-rentals text-center py-5" id="container-animation">
+        <h6 class="text-primary">Discover Our</h6>
+        <h2 class="fw-bold">Latest Blog Posts</h2>
+        <p>Stay informed with our curated articles and insights.</p>        
+        <div class="container">
+        <div class="row">
 
-          <!-- Radius Slider -->
-          <div class="form-group d-flex align-items-center mb-3 w-100">
-            <label for="radius-slider" class="me-2">Radius</label>
-            <input type="range" id="radius-slider" name="radius" min="5" max="50" step="5" value="5" required class="form-control-range">
-            <span id="radius-value" style="margin-left: 10px;" class="ms-2">5km</span>
-          </div>
-          <!-- Search Button Centered Below the Form -->
-          <button class="btn btn-info mt-3 form-control" type="submit">Search</button>
-        </form>
-      </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <a href="blog-post.html" style="text-decoration: none;">
+                    <div class="card rental-card">
+                    <img src="img/house-4.webp" class="card-img-top" alt="Modern Villa">
+                    <div class="card-body">
+                        <h5 class="card-title">Exploring Freshly Built Luxury Modern Villa</h5>
+                        <p><i class="bi bi-calendar"></i> January 8, 2024</p>
+                        <p class="card-text">Contemporary apartments offer the best blend of comfort and style. In this post, we explore why these apartments are a favorite...</p>
+                        <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-person"></i> 5 Comments</span>
+                        <span><i class="bi bi-eye"></i> 120 Views</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">Read More</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+                
+                <!-- Blog Post 5 -->
+                <div class="col-md-4" data-aos="fade-up">
+                <a href="blog-post.html" style="text-decoration: none;">
+                    <div class="card rental-card">
+                    <img src="img/house-6.jpg" class="card-img-top" alt="Cozy Apartment">
+                    <div class="card-body">
+                        <h5 class="card-title">The Allure of Contemporary Cozy Apartments</h5>
+                        <p><i class="bi bi-calendar"></i> January 5, 2024</p>
+                        <p class="card-text">Contemporary apartments offer the best blend of comfort and style. In this post, we explore why these apartments are a favorite...</p>
+                        <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-person"></i> 3 Comments</span>
+                        <span><i class="bi bi-eye"></i> 98 Views</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">Read More</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+                
+                <!-- Blog Post 7 -->
+                <div class="col-md-4" data-aos="fade-up">
+                <a href="blog-post.html" style="text-decoration: none;">
+                    <div class="card rental-card">
+                    <img src="img/house-10.jpg" class="card-img-top" alt="Luxury Apartment">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Living: A Look at Modern Apartments</h5>
+                        <p><i class="bi bi-calendar"></i> January 3, 2024</p>
+                        <p class="card-text">Explore the pinnacle of urban living with luxury apartments. Find out why this lifestyle is becoming increasingly popular...</p>
+                        <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-person"></i> 8 Comments</span>
+                        <span><i class="bi bi-eye"></i> 150 Views</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">Read More</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+
+                <!-- Blog Post 1 -->
+                <div class="col-md-4" data-aos="fade-up">
+                <a href="blog-post.html" style="text-decoration: none;">
+                    <div class="card rental-card">
+                    <img src="img/house-2.jpg" class="card-img-top" alt="Modern Villa">
+                    <div class="card-body">
+                        <h5 class="card-title">Exploring Freshly Built Luxury Modern Villas</h5>
+                        <p><i class="bi bi-calendar"></i> January 8, 2024</p>
+                        <p class="card-text">Get a glimpse of the latest trends in modern villas and why they’re the perfect choice for contemporary living...</p>
+                        <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-person"></i> 5 Comments</span>
+                        <span><i class="bi bi-eye"></i> 120 Views</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">Read More</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="col-md-4" data-aos="fade-up">
+                <a href="blog-post.html" style="text-decoration: none;">
+                    <div class="card rental-card">
+                    <img src="img/house-3.webp" class="card-img-top" alt="Cozy Apartment">
+                    <div class="card-body">
+                        <h5 class="card-title">The Allure of Contemporary Cozy Apartments</h5>
+                        <p><i class="bi bi-calendar"></i> January 5, 2024</p>
+                        <p class="card-text">Contemporary apartments offer the best blend of comfort and style. In this post, we explore why these apartments are a favorite...</p>
+                        <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-person"></i> 3 Comments</span>
+                        <span><i class="bi bi-eye"></i> 98 Views</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">Read More</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="col-md-4" data-aos="fade-up">
+                <a href="blog-post.html" style="text-decoration: none;">
+                    <div class="card rental-card">
+                    <img src="img/house-4.webp" class="card-img-top" alt="Luxury Apartment">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Living: A Look at Modern Apartments</h5>
+                        <p><i class="bi bi-calendar"></i> January 3, 2024</p>
+                        <p class="card-text">Explore the pinnacle of urban living with luxury apartments. Find out why this lifestyle is becoming increasingly popular...</p>
+                        <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-person"></i> 8 Comments</span>
+                        <span><i class="bi bi-eye"></i> 150 Views</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">Read More</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <a href="blog-post.html" style="text-decoration: none;">
+                        <div class="card rental-card">
+                        <img src="img/house-1.jpg" class="card-img-top" alt="Modern Villa">
+                        <div class="card-body">
+                            <h5 class="card-title">Exploring Freshly Built Luxury Modern Villas</h5>
+                            <p><i class="bi bi-calendar"></i> January 8, 2024</p>
+                            <p class="card-text">Get a glimpse of the latest trends in modern villas and why they’re the perfect choice for contemporary living...</p>
+                            <div class="d-flex justify-content-between">
+                            <span><i class="bi bi-person"></i> 5 Comments</span>
+                            <span><i class="bi bi-eye"></i> 120 Views</span>
+                            </div>
+                            <p class="mt-2 text-primary fw-bold">Read More</p>
+                        </div>
+                        </div>
+                    </a>
+                    </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="col-md-4" data-aos="fade-up">
+                <a href="blog-post.html" style="text-decoration: none;">
+                    <div class="card rental-card">
+                    <img src="img/house-2.jpg" class="card-img-top" alt="Cozy Apartment">
+                    <div class="card-body">
+                        <h5 class="card-title">The Allure of Contemporary Cozy Apartments</h5>
+                        <p><i class="bi bi-calendar"></i> January 5, 2024</p>
+                        <p class="card-text">Contemporary apartments offer the best blend of comfort and style. In this post, we explore why these apartments are a favorite...</p>
+                        <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-person"></i> 3 Comments</span>
+                        <span><i class="bi bi-eye"></i> 98 Views</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">Read More</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="col-md-4" data-aos="fade-up">
+                <a href="blog-post.html" style="text-decoration: none;">
+                    <div class="card rental-card">
+                    <img src="img/house-3.webp" class="card-img-top" alt="Luxury Apartment">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Living: A Look at Modern Apartments</h5>
+                        <p><i class="bi bi-calendar"></i> January 3, 2024</p>
+                        <p class="card-text">Explore the pinnacle of urban living with luxury apartments. Find out why this lifestyle is becoming increasingly popular...</p>
+                        <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-person"></i> 8 Comments</span>
+                        <span><i class="bi bi-eye"></i> 150 Views</span>
+                        </div>
+                        <p class="mt-2 text-primary fw-bold">Read More</p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination justify-content-end mt-4 gap-2">
+            <button class="btn btn-primary">1</button>
+            <button class="btn btn-outline-primary">2</button>
+        </div>
+        </div>
     </section>
     
-    <h1 style="text-align: center; margin: 50px;">Comming Soon...</h1>
 
     <footer class="bg-dark text-light py-5">
       <div class="container">
@@ -181,6 +326,16 @@
       </div>
     </footer>
       
+              <!-- AOS Script -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+              <script>
+              AOS.init({
+                  duration: 1000, // Animation duration (ms)
+                  easing: "ease-in-out",
+                  once: true, // Run animation once
+              });
+              </script>
+
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
